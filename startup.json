@@ -1,0 +1,17 @@
+{
+    "apps": [
+      {
+        "name": "s3Download",
+        "script": "server.js",
+        "node_args": [
+          "--max-old-space-size=1024",
+          "--expose-gc"
+        ],
+        "merge_logs": false,
+        "cwd": "applications/hjkvdktyyk/public_html",
+        "instances": 0,
+        "exec_mode": "cluster_mode",
+        "cron_restart": "0 1 * * *"
+      }
+    ]
+  }
